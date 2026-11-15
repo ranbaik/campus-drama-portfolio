@@ -1,0 +1,29 @@
+# 매주 월요일 09:00(KST)에 주간 KPI 리포트를 자동 생성
+name: weekly-kpi-report
+
+on:
+  schedule:
+    - cron: "0 0 * * 1"   # UTC 월 00:00 = KST 월 09:00
+  workflow_dispatch:       # Actions 탭에서 수동 실행
+
+permissions:
+  contents: read
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: automation-sample
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: 리포트 생성
+        run: python kpi_report.py
+      - name: 결과 첨부
+        uses: actions/upload-artifact@v4
+        with:
+          name: kpi-report
+          path: automation-sample/output/
