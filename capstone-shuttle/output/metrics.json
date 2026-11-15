@@ -1,0 +1,15 @@
+{
+  "records": 2400,
+  "train": 1920,
+  "test": 480,
+  "coefficients": {
+    "절편": 2.156,
+    "대기 인원": 0.115,
+    "출퇴근 피크": 4.065,
+    "비": 3.147,
+    "월·금요일": 1.136
+  },
+  "accuracy_within_3min": 85.2,
+  "mae_min": 1.63,
+  "avg_wait_peak_min": 10.4
+}

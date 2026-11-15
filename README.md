@@ -9,7 +9,9 @@
 
 | 경로 | 내용 | 연결된 장면 |
 |---|---|---|
-| [`portfolio/홍길동_포트폴리오_샘플.pdf`](portfolio/) | 앱의 [📄 PDF 저장]으로 만든 포트폴리오 (A4, 3쪽) | 전체 |
+| [`portfolio/홍길동_포트폴리오_샘플.pdf`](portfolio/) | 앱의 [📄 PDF 저장]으로 만든 포트폴리오 (A4) | 전체 |
+| [`room-booking/`](room-booking/) | 예약 충돌 검사 로직 + 규칙별 테스트 7개 | 🛠 팀 프로젝트: 강의실 예약 웹앱 (2024년 1학기) |
+| [`capstone-shuttle/`](capstone-shuttle/) | 발표 자료 PDF(6쪽) + 대기시간 예측 회귀 모델 코드 | 🛠 캡스톤: 셔틀 대기시간 예측 (2025년 1학기) |
 | [`automation-sample/`](automation-sample/) | 주간 KPI 리포트 자동화 파이썬 코드 + 샘플 데이터 + 결과 예시 | 💼 스타트업 데이터 분석 인턴 (2025년 2학기) |
 | [`.github/workflows/weekly-kpi.yml`](.github/workflows/weekly-kpi.yml) | 매주 월요일 자동 실행 (GitHub Actions) | 〃 |
 
@@ -17,8 +19,9 @@
 
 ```
 캠퍼스 드라마 앱 (장면 편집)
-  └─ 증빙 자료: 링크 "자동화 코드(샘플)"  ──►  이 저장소 /automation-sample
-                                         └─►  /automation-sample/output/kpi_report_2025-W38.html
+  ├─ 강의실 예약 웹앱  "GitHub 저장소"     ──►  이 저장소 /room-booking
+  ├─ 캡스톤 셔틀       "발표 자료"         ──►  /capstone-shuttle/shuttle_slides.pdf
+  └─ 데이터 분석 인턴  "자동화 코드(샘플)" ──►  /automation-sample
 포트폴리오 미리보기 → [📄 PDF 저장]  ──►  /portfolio/홍길동_포트폴리오_샘플.pdf
 ```
 
